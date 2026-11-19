@@ -208,8 +208,36 @@ body {
     object-fit: cover;
     object-position: center;
 }
+.calculadora{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(36, 20, 8);
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px solid #f0c506;
+     width: 85%;
+    max-width: 800px;
+    margin: 25px auto;
+    
+}
+.aviso-calculo {
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 24px;
+    text-align: center;
+    background-color:rgb(36, 20, 8);
+    color: #babd1e;
+    padding: 10px;
+    border-radius: 8px;
+}
+#qtd-pessoas {
+   width: 220px;
+   padding: 12px;
+   font-size: 20px; 
+   text-align: center; 
+   border-radius: 8px;
 
-
+       }  
 /* ==========================================================================
    4. EXCLUSIVO: cliente.html (Página de Clientes)
    ========================================================================== */

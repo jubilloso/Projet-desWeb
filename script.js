@@ -108,3 +108,23 @@ if (btFormulario) {
             textoRelato.value = "";
         }
     })};
+
+
+
+    /*CALCULADORA CHUIRRASCO*/ 
+
+    const qtdPessoas = document.querySelector('#qtd-pessoas');
+    const btCalculo = document.querySelector('#bt-calculator');
+    const avisoCalculo = document.querySelector('#Resultado-churrasco')
+
+    if(btCalculo){
+        btCalculo.addEventListener('click', function(){
+         const pessoas = Number(qtdPessoas.value);
+         if (pessoas <= 0){
+            avisoCalculo.textContent = "Digite pelo menos 1  pessoa para calcular"
+         }else{
+            const totalKg = pessoas * 0.5;
+            avisoCalculo.textContent= `🥩 Para ${pessoas} carnívoro(s), você vai precisar de ${totalKg} kg de carne da Jubilous Steaks!`
+         }
+           });
+    }
