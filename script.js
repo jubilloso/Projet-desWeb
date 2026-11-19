@@ -71,3 +71,40 @@ if (btIlusao) {
 }
 
 /*BOTOES DA PÁGINA PROMOÇÕES */
+
+
+/*FORMULÀRIO Página cliente */
+
+
+
+
+
+const btFormulario = document.querySelector('#btn-formulario');
+const msgFormulario = document.querySelector('#msg-formulario');
+const textoRelato = document.querySelector('#texto-relato');
+const campoNome = document.querySelector('#nome');
+const campoEmail = document.querySelector('#email');
+const campoTelefone = document.querySelector('#telefone');
+
+if (btFormulario) {
+    btFormulario.addEventListener('click', function() {
+        if (campoNome.value.trim() === "") {
+            msgFormulario.textContent = "⚠️ Por favor, informe seu nome!";
+        } 
+        else if (campoEmail.value.trim() === "") {
+            msgFormulario.textContent = "⚠️ Por favor, informe seu e-mail!";
+        } 
+        else if (campoTelefone.value.trim() === "") {
+            msgFormulario.textContent = "⚠️ Por favor, informe seu telefone!";
+        } 
+        else if (textoRelato.value.trim() === "") {
+            msgFormulario.textContent = "⚠️ Escreva seu relato antes de enviar!";
+        }
+        else {
+            msgFormulario.textContent = `✅ Relato enviado com sucesso, ${campoNome.value}! Agradecemos sua participação.`;
+            campoNome.value = "";
+            campoEmail.value = "";
+            campoTelefone.value = "";
+            textoRelato.value = "";
+        }
+    })};

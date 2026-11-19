@@ -248,6 +248,23 @@ body {
     background-color: #b30000;
 }
 
+.avisoFormulario {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #990000; 
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f5f5f7;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.avisoFormulario:empty {
+    display: none;
+}
+
+
 
 /* ==========================================================================
    5. EXCLUSIVO: infosIMPortantes.html (Página de Informações Importantes)

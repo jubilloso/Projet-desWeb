@@ -79,16 +79,18 @@
 
     <fieldset class="form">  
         <legend>Fale conosco:</legend>
-        <textarea rows="7" cols="50" placeholder="Escreva aqui sua experiência gastronômica..."></textarea>
-        <br><br>
-        <button type="submit" class="btn-relato">
-            ENVIAR MEU RELATO SACRILÉGIO
-        </button>   
+        <textarea id="texto-relato" rows="7" cols="50" placeholder="Escreva aqui sua experiência gastronômica..." required></textarea>
+               <br><br>
+         <button type="button" class="btn-relato" id="btn-formulario">
+             ENVIAR MEU RELATO SACRILÉGIO
+         </button>
+           <p id="msg-formulario" class="avisoFormulario"></p>
+
     </fieldset>  
 
     <hr class="linha-vermelha">     
     <img src="carnefumaça.jpg" alt="Foto Carne" class="img-carne-fumaca">   
     <hr class="linha-vermelha">   
-
+<script src="script.js"></script>
 </body>
 </html>
