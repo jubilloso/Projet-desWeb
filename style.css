@@ -293,7 +293,9 @@ body.pagina-promocoes {
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
+    width: 85%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .cont h1 {
@@ -319,4 +321,33 @@ body.pagina-promocoes {
     display: block;
     margin: auto auto 0 auto;
     vertical-align: bottom;
+}
+.botao-promos {
+    background-color: #990000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-promos:hover {
+    background-color: #d4af37;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.aviso-promo {
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #000000;
+    color: #f1f503;
+    padding: 10px;
+    border-radius: 8px;
 }
